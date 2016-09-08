@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "gothic";
+  src: url('../fonts/gothic.ttf?1438219672') format('truetype');
+}
+/* line 9, ../sass/styles.scss */
+html {
+  height: 100%;
+  margin: 0;
+}
+/* line 12, ../sass/styles.scss */
+html body {
+  font-family: "gothic", sans-serif;
+  background-color: #f2e8d6;
+  height: 100%;
+  margin: 0;
+}
+/* line 17, ../sass/styles.scss */
+html body header {
+  margin-top: 0;
+  margin-bottom: 65px;
+  padding: 30px 0;
+  background-color: #FFECCA;
+  color: #7594bb;
+  border-bottom: 3px solid #bacadd;
+  box-shadow: 0px 0px 150px #7594bb;
+}
+/* line 25, ../sass/styles.scss */
+html body header h1 {
+  font-size: 3em;
+}
+/* line 29, ../sass/styles.scss */
+html body p {
+  font-size: 1.2em;
+}
+/* line 32, ../sass/styles.scss */
+html body .wrapper {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+/* line 38, ../sass/styles.scss */
+footer {
+  height: 100px;
+  padding-top: 30px;
+  background-color: #7594bb;
+  color: #FFECCA;
+  width: 100%;
+}
+/* line 44, ../sass/styles.scss */
+footer a {
+  color: black;
+}
+/* line 46, ../sass/styles.scss */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 51, ../sass/styles.scss */
+.push {
+  height: 80px;
+}
+
+/* line 60, ../sass/styles.scss */
+.index .category-select {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+/* line 64, ../sass/styles.scss */
+.index .category-select button {
+  height: 40px;
+  padding: 0 1.09%;
+  font-size: 1.2em;
+  background-color: #7594bb;
+  border: 1px solid #7594bb;
+  color: #FFECCA;
+  transition: all 0.5s;
+}
+/* line 72, ../sass/styles.scss */
+.index .category-select button:hover, .index .category-select button.active {
+  color: #7594bb;
+  background-color: #FFECCA;
+  height: 50px;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+/* line 79, ../sass/styles.scss */
+.index .category-select button:focus {
+  outline: none;
+}
+/* line 84, ../sass/styles.scss */
+.index form {
+  color: #7594bb;
+  display: block;
+  width: 30%;
+  margin-top: 20px;
+}
+/* line 89, ../sass/styles.scss */
+.index form .form-control {
+  display: inline;
+  width: 50%;
+}
+/* line 94, ../sass/styles.scss */
+.index .goals {
+  border: 2px solid #7594bb;
+  width: 31%;
+  display: inline-table;
+  margin: 1%;
+  height: 200px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+/* line 102, ../sass/styles.scss */
+.index .goals:hover {
+  background-color: #FFECCA;
+  transition: all 0.5s;
+}
+/* line 106, ../sass/styles.scss */
+.index .goals h2 {
+  margin-top: 50px;
+  width: 100%;
+}
+/* line 110, ../sass/styles.scss */
+.index .goals p {
+  width: 80%;
+  margin: 0 auto 15px;
+  text-align: center;
+}
+/* line 115, ../sass/styles.scss */
+.index .goals a {
+  color: #7594bb;
+}
+/* line 117, ../sass/styles.scss */
+.index .goals a:hover {
+  text-decoration: none;
+}
+/* line 122, ../sass/styles.scss */
+.index .add {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background-color: #7594bb;
+  border: 1px solid #7594bb;
+  color: #FFECCA;
+  font-size: 1.2em;
+  transition: all 0.5s;
+}
+/* line 130, ../sass/styles.scss */
+.index .add:hover, .index .add.active {
+  color: #7594bb;
+  background-color: #FFECCA;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+
+/* line 143, ../sass/styles.scss */
+.show {
+  border: 2px solid #7594bb;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+/* line 147, ../sass/styles.scss */
+.show h2 {
+  color: #7594bb;
+}
+/* line 150, ../sass/styles.scss */
+.show p {
+  margin-bottom: 30px;
+}
+/* line 153, ../sass/styles.scss */
+.show a {
+  margin: auto 3px;
+  width: 100px;
+}
+
+/* line 163, ../sass/styles.scss */
+.new, .edit {
+  width: 60%;
+  display: block;
+  margin: 0 auto 70px;
+  border: 2px solid #7594bb;
+  border-radius: 10px;
+}
+/* line 169, ../sass/styles.scss */
+.new h2, .edit h2 {
+  margin: 40px 30px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+/* line 174, ../sass/styles.scss */
+.new form, .edit form {
+  margin: 0 40px 40px;
+}
+/* line 177, ../sass/styles.scss */
+.new a, .edit a {
+  margin: auto 3px;
+  width: 100px;
+  margin-top: 30px;
+}
+/* line 182, ../sass/styles.scss */
+.new input[type="submit"], .edit input[type="submit"] {
+  margin: auto 3px;
+  width: 100px;
+  margin-top: 30px;
+}

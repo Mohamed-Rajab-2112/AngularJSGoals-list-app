@@ -1,0 +1,1 @@
+angular.module("GoalList", ['ngRoute', 'ngResource']);

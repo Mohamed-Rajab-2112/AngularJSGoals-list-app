@@ -1,0 +1,194 @@
+@import "compass/css3";
+
+@include font-face("gothic", font-files("gothic.ttf"));
+
+$lc: #FFECCA;
+$dc: scale_color(#476891, $lightness: 30%);
+$bgc: scale_color(#DEC599, $lightness: 60%);
+
+html {
+  height: 100%;
+  margin: 0;
+  body {
+    font-family: "gothic", sans-serif;
+    background-color: $bgc;
+    height: 100%;
+    margin: 0;
+    header {
+      margin-top: 0;
+      margin-bottom: 65px;
+      padding: 30px 0;
+      background-color: $lc;
+      color: $dc;
+      border-bottom: 3px solid scale_color($dc, $lightness: 50%);
+      box-shadow: 0px 0px 150px $dc;
+      h1 {
+        font-size: 3em;
+      }
+    }
+    p {
+      font-size: 1.2em;
+    }
+    .wrapper {
+      min-height: 100%;
+      margin-bottom: -100px;
+    }
+  }
+}
+footer {
+  height: 100px;
+  padding-top: 30px;
+  background-color: $dc;
+  color: $lc;
+  width: 100%;
+  a {
+    color: black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.push {
+  height: 80px;
+}
+
+//***********************************
+//      INDEX PAGE STYLES
+//***********************************
+
+.index {
+  .category-select {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    button {
+      height: 40px;
+      padding: 0 1.09%;
+      font-size: 1.2em;
+      background-color: $dc;
+      border: 1px solid $dc;
+      color: $lc;
+      transition: all 0.5s;
+      &:hover, &.active {
+        color: $dc;
+        background-color: $lc;
+        height: 50px;
+        transition: all 0.5s;
+        font-weight: bold;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  form {
+    color: $dc;
+    display: block;
+    width: 30%;
+    margin-top: 20px;
+    .form-control {
+      display: inline;
+      width: 50%;
+    }
+  }
+  .goals {
+    border: 2px solid $dc;
+    width: 31%;
+    display: inline-table;
+    margin: 1%;
+    height: 200px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    &:hover {
+      background-color: $lc;
+      transition: all 0.5s;
+    }
+    h2 {
+      margin-top: 50px;
+      width: 100%;
+    }
+    p {
+      width: 80%;
+      margin: 0 auto 15px;
+      text-align: center;
+    }
+    a {
+      color: $dc;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .add {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    background-color: $dc;
+    border: 1px solid $dc;
+    color: $lc;
+    font-size: 1.2em;
+    transition: all 0.5s;
+    &:hover, &.active {
+      color: $dc;
+      background-color: $lc;
+      transition: all 0.5s;
+      font-weight: bold;
+    }
+  }
+}
+
+//***********************************
+//      SHOW PAGE STYLES
+//***********************************
+
+.show {
+  border: 2px solid $dc;
+  border-radius: 10px;
+  padding: 40px 20px;
+  h2 {
+    color: $dc;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+  a {
+    margin: auto 3px;
+    width: 100px;
+  }
+}
+
+//*****************************************
+//      NEW PAGE STYLES & EDIT PAGE STYLES
+//*****************************************
+
+.new, .edit {
+  width: 60%;
+  display: block;
+  margin: 0 auto 70px;
+  border: 2px solid $dc;
+  border-radius: 10px;
+  h2 {
+    margin: 40px 30px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+  form {
+    margin: 0 40px 40px;
+  }
+  a {
+    margin: auto 3px;
+    width: 100px;
+    margin-top: 30px;
+  }
+  input[type="submit"] {
+    margin: auto 3px;
+    width: 100px;
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+
+

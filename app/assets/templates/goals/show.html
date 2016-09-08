@@ -1,0 +1,8 @@
+<div class="show container">
+  <h2>{{goal.title}}</h2>
+  <br>
+  <p>{{goal.content}}</p>
+  <a href="#/goals" class="btn btn-default">Back</a>
+  <a href="#/goals/{{goal.id}}/edit" class="btn btn-primary">Edit</a>
+  <a href="" class="btn btn-danger" ng-click="deleteGoal(goal)">Delete</a>
+</div>

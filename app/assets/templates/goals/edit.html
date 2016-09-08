@@ -1,0 +1,26 @@
+<div class="edit">
+  <h2>Edit: {{goal.title}}</h2>
+  <form novalidate name="goalEditForm" ng-submit="goalEditForm.$valid && onSubmit(goal)">
+    <fieldset class="form-group">
+      <label>Title</label>
+      <input class="form-control" type="text" value="{{goal.title}}" name="title" ng-model="goal.title" required>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>Category</label>
+      <select class="form-control" ng-options="category.id as category.name for category in categories" ng-model="goal.categoryId" required></select>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>Description</label>
+      <input class="form-control" type="text" value="{{goal.description}}" name="description" ng-model="goal.description" required>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>Content</label>
+      <textarea rows="7" cols="12" class="form-control" type="text" value="{{goal.content}}" name="content" ng-model="goal.content" required></textarea>
+    </fieldset>
+    <a href="#/goals/{{goal.id}}" class="btn btn-default">Back</a>
+    <input type="submit" class="btn btn-primary" ng-disabled="submit" ng-value="submit ? 'saving...' : 'Submit'">
+  </form>
+</div>
